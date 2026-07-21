@@ -149,6 +149,7 @@ a.pill-row:hover { background: rgba(79, 179, 169, .07); }
 .loc-foot { margin-top: 14px; font: 400 9px var(--mono); letter-spacing: .18em; color: var(--steam); }
 .loc-foot a { color: var(--cream2); position: relative; z-index: 2; }
 .loc-foot a:hover { color: var(--patina); }
+.loc-actions { display: flex; gap: 10px; flex-wrap: wrap; }
 .loc-reserve { display: inline-flex; align-items: center; gap: 8px; margin-top: 12px; border: 1px solid rgba(79, 179, 169, .55); padding: 9px 16px; border-radius: 2px; font: 500 9.5px var(--mono); letter-spacing: .2em; color: var(--patina); transition: background .25s; position: relative; }
 .loc-reserve:hover, .loc-reserve:focus-visible { background: rgba(79, 179, 169, .1); color: var(--patina); }
 
@@ -213,12 +214,14 @@ a.pill-row:hover { background: rgba(79, 179, 169, .07); }
 .wagyu-kicker { font: 400 9.5px var(--mono); letter-spacing: .3em; color: var(--steam); }
 .wagyu h2 { margin: 16px 0 0; font: 400 clamp(32px, 3.6vw, 44px)/1.1 var(--serif); color: var(--rice); }
 .wagyu-table { margin-top: 30px; border-top: 1px solid rgba(138, 133, 120, .28); }
-.wagyu-row { display: flex; justify-content: space-between; gap: 20px; padding: 13px 0; border-bottom: 1px solid rgba(138, 133, 120, .28); }
+.wagyu-row { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 13px 0; border-bottom: 1px solid rgba(138, 133, 120, .28); }
 a.wagyu-row.link { transition: background .25s; }
 a.wagyu-row.link:hover, a.wagyu-row.link:focus-visible { background: rgba(79, 179, 169, .06); }
 a.wagyu-row.link:hover .wagyu-val { color: var(--patina); }
 .wagyu-key { font: 400 9.5px var(--mono); letter-spacing: .18em; color: var(--steam); }
-.wagyu-val { font: 400 11.5px var(--mono); color: var(--rice); text-align: right; transition: color .25s; }
+.wagyu-val { font: 400 11.5px var(--mono); color: var(--rice); text-align: right; margin-left: auto; transition: color .25s; }
+.menu-cta { flex: none; border: 1px solid rgba(79, 179, 169, .55); padding: 8px 14px; border-radius: 2px; font: 500 9.5px var(--mono); letter-spacing: .2em; color: var(--patina); background: rgba(79, 179, 169, .07); transition: background .25s, box-shadow .25s; }
+a.wagyu-row.link:hover .menu-cta, a.wagyu-row.link:focus-visible .menu-cta { background: rgba(79, 179, 169, .16); box-shadow: 0 0 14px rgba(79, 179, 169, .25); }
 .wagyu-para { margin-top: 26px; font: 400 13.5px/1.75 var(--sans); color: var(--cream2); max-width: 460px; text-wrap: pretty; }
 .wagyu-para .em { font-style: italic; color: var(--rice); }
 .wagyu-seal { margin-top: 32px; display: inline-block; }
@@ -298,6 +301,7 @@ a.wagyu-row.link:hover .wagyu-val { color: var(--patina); }
 /* ---------- responsive (mobile < 780px) ---------- */
 @media (max-width: 779.98px) {
   .nav-link.sec { display: none; }
+  .wagyu-val { display: none; } /* menu rows read "DINNER — MENU ↗" */
   .anatomy-steps { display: none; }
   .anatomy-steps-m { display: flex; }
   .anatomy-stage { top: 47%; }
