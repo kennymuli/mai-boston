@@ -240,6 +240,29 @@ a.wagyu-row.link:hover .menu-cta, a.wagyu-row.link:focus-visible .menu-cta { bac
 .press .quote-rule { margin-top: 28px; }
 .press-outlet { margin-top: 18px; font: 500 11px var(--sans); letter-spacing: .36em; color: var(--cream2); }
 
+/* ---------- press (best of boston feature + highlights) ---------- */
+.pressfeat { border-top: 1px solid var(--hair18); padding: clamp(56px, 8vw, 90px) clamp(20px, 4vw, 56px); }
+.pressfeat-cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr)); gap: clamp(32px, 5vw, 72px); align-items: center; max-width: 1160px; margin: 0 auto; }
+.pressfeat-photo { position: relative; margin: 0; overflow: hidden; border: 1px solid var(--hair25); aspect-ratio: 1 / 1; width: min(480px, 100%); justify-self: center; }
+.pressfeat-photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.pressfeat-photo::after { content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 72px; background: linear-gradient(0deg, rgba(12, 12, 14, .55), rgba(12, 12, 14, 0)); pointer-events: none; }
+.pressfeat-photo figcaption { position: absolute; left: 14px; bottom: 12px; z-index: 1; font: 400 8.5px var(--mono); letter-spacing: .24em; color: rgba(244, 239, 230, .85); }
+.pressfeat-kicker { font: 400 9.5px var(--mono); letter-spacing: .3em; color: var(--steam); }
+.press-award { display: inline-flex; align-items: center; gap: 9px; margin-top: 18px; border: 1.5px solid var(--wine); border-radius: 2px; padding: 8px 13px; font: 700 10px var(--mono); letter-spacing: .22em; color: var(--wine); transform: rotate(-1.5deg); }
+.pressfeat h2 { margin: 18px 0 0; font: 400 clamp(32px, 3.6vw, 44px)/1.1 var(--serif); color: var(--rice); }
+.pressfeat-quote { margin-top: 22px; font: italic 400 clamp(18px, 2vw, 24px)/1.5 var(--serif); color: var(--cream); max-width: 520px; text-wrap: pretty; }
+.pressfeat-outlet { margin-top: 18px; font: 500 10px var(--sans); letter-spacing: .3em; color: var(--steam); }
+.pressfeat-link { display: inline-flex; align-items: center; gap: 8px; margin-top: 22px; border: 1px solid rgba(79, 179, 169, .55); padding: 9px 16px; border-radius: 2px; font: 500 9.5px var(--mono); letter-spacing: .2em; color: var(--patina); transition: background .25s; }
+.pressfeat-link:hover, .pressfeat-link:focus-visible { background: rgba(79, 179, 169, .1); color: var(--patina); }
+.news-highlights { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr)); gap: clamp(14px, 2vw, 22px); max-width: 1160px; margin: clamp(32px, 4.6vw, 52px) auto 0; }
+.news-hl { display: flex; flex-direction: column; gap: 16px; background: var(--nori); border: 1px solid var(--hair25); padding: clamp(20px, 3vw, 28px); transition: border-color .3s; }
+.news-hl:hover, .news-hl:focus-visible { border-color: rgba(79, 179, 169, .45); }
+.news-hl-wordmark { font: 500 12px var(--sans); letter-spacing: .34em; color: var(--cream); }
+.news-hl-quote { font: italic 400 clamp(16px, 1.8vw, 19px)/1.5 var(--serif); color: var(--rice); text-wrap: pretty; }
+.news-hl-link { margin-top: auto; font: 500 9px var(--mono); letter-spacing: .22em; color: var(--patina); }
+.news-hl-arrow { display: inline-block; transition: transform .3s var(--ease); }
+.news-hl:hover .news-hl-arrow { transform: translate(3px, -3px); }
+
 /* ---------- reviews ---------- */
 .reviews { border-top: 1px solid var(--hair18); padding: clamp(36px, 5vw, 50px) var(--pad-x) clamp(44px, 6vw, 56px); }
 .reviews-kicker { font: 400 10px var(--mono); letter-spacing: .3em; color: var(--steam); }
