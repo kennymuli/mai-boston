@@ -248,7 +248,6 @@ a.wagyu-row.link:hover .menu-cta, a.wagyu-row.link:focus-visible .menu-cta { bac
 .review-metric:hover, .review-metric:focus-visible { border-color: rgba(79, 179, 169, .45); }
 .review-src { font: 500 9.5px var(--sans); letter-spacing: .3em; color: var(--steam); }
 .review-num { font: 400 clamp(38px, 4.4vw, 52px)/1 var(--serif); color: var(--rice); }
-.review-metric-note { font: 400 9px var(--mono); letter-spacing: .18em; color: var(--steam); }
 .review-count { margin-top: 4px; font: 500 9px var(--mono); letter-spacing: .2em; color: var(--patina); }
 .review-asof { margin-top: 14px; font: 400 8.5px var(--mono); letter-spacing: .2em; color: var(--steam); }
 .review-quote { margin: clamp(30px, 4vw, 44px) 0 0; max-width: 720px; }
